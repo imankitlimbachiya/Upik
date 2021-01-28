@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/colorPrimary</item>
+        <item name="android:calendarTextColor">@color/colorPrimary</item>
+        <item name="android:dayOfWeekBackground">@color/colorPrimary</item>
+        <item name="android:yearListSelectorColor">@color/colorPrimary</item>
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:minDate">01/01/2000</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorBelowLine</item>
+        <item name="colorControlActivated">@color/starcolor</item>
+    </style>
+</resources>

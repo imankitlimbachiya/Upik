@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Linear_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_jobimagebadge"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/urgent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_jobimage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp" />
+
+            <ProgressBar
+                android:id="@+id/Progressbar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_Jobtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/starbuckscoffee"
+                android:textColor="@color/light_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_job_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/Lookingforaparttimecleanertohelpuscleanthekitchen" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feb182019200pm"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_fav"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/unlike" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_totalPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/dollar"
+                    android:textColor="@android:color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:background="@drawable/location_icon" />
+
+                    <TextView
+                        android:id="@+id/txt_miles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/dis"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUser"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/man"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/imgUser"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ratingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/ratingBarMain"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:isIndicator="true"
+            android:theme="@style/RatingBar"
+            android:numStars="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:transformPivotY="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/grey"/>
+
+</LinearLayout>
